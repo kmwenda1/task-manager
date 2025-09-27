@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Reminder Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>📌 Task Reminder Board</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" data-category="Work">Work</button>
+      <button class="tab-button" data-category="Personal">Personal</button>
+      <button class="tab-button" data-category="Urgent">Urgent</button>
+    </div>
+
+    <!-- Add Task Form -->
+    <div class="task-form">
+      <input type="text" id="taskInput" placeholder="Enter your task">
+      <input type="date" id="taskDate">
+      <select id="taskCategory">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <button id="addTaskBtn">➕ Add Task</button>
+    </div>
+
+    <!-- Task Lists -->
+    <div class="task-lists">
+      <ul id="Work" class="task-list active"></ul>
+      <ul id="Personal" class="task-list"></ul>
+      <ul id="Urgent" class="task-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
